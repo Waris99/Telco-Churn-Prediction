@@ -77,6 +77,7 @@
  
    Run App:
     streamlit run app.py
+   
    Requirements
    - Python 3.8+
    - Libraries: pandas, numpy, scikit-learn, streamlit, joblib, matplotlib, seaborn
