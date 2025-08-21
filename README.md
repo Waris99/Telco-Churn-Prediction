@@ -1,43 +1,47 @@
 # Telco-Churn-Prediction
-# Project Overview
-# - Goal: Predict whether a customer will churn (leave the service) based on demographic and
+## Project Overview
+### - Goal: Predict whether a customer will churn (leave the service) based on demographic and
  service usage data.
-# - Dataset: Telco Customer Churn Dataset (IBM Sample Data)- Approach:
-# 1. Exploratory Data Analysis (EDA)
-# 2. Data cleaning & preprocessing
-# 3. Model training & evaluation
-# 4. Deployment with a Streamlit dashboard
+### - Dataset: Telco Customer Churn Dataset (IBM Sample Data)- Approach:
+### 1. Exploratory Data Analysis (EDA)
+### 2. Data cleaning & preprocessing
+### 3. Model training & evaluation
+### 4. Deployment with a Streamlit dashboard
 
-# Repository Structure
-# Telco-Churn-Prediction/
-# app.py # Streamlit app
-# Telco_Churn_Prediction.ipynb # Jupyter notebook with EDA & model training
-# churn_pipeline.pkl # Pre-trained model pipeline (optional)
-# requirements.txt # Dependencies
-# README.md # Project documentation
-# Dataset Description
-# - Rows: ~7,043 customers
-# - Columns:
- # • Demographics: gender, SeniorCitizen, Partner, Dependents
- # • Services: PhoneService, InternetService, OnlineSecurity, etc.
- # • Account Info: Contract type, PaymentMethod, PaperlessBilling
- # • Financials: MonthlyCharges, TotalCharges
- # • Target: Churn (Yes/No)
-# Methodology
-# 1. Data Preprocessing
- # - Handled missing values (esp. TotalCharges)
- # - Converted categorical variables using OneHotEncoding
- # - Normalized numerical variables (MonthlyCharges, TotalCharges, tenure)
- # - Dealt with class imbalance using stratified splits
-# 2. Exploratory Data Analysis (EDA)
- # - Churn Rate: ~26.5% customers churned
-# - Key Findings:
- # • Month-to-month contracts → highest churn
- # • Fiber optic internet users churn more
- # • Senior citizens and high monthly charges = higher risk
- # • Longer tenure customers churn less
-# 3. Modeling
- # - Models Tested: Logistic Regression, Random Forest Classifier
+## Repository Structure
+### Telco-Churn-Prediction/
+### app.py # Streamlit app
+### Telco_Churn_Prediction.ipynb # Jupyter notebook with EDA & model training
+### churn_pipeline.pkl # Pre-trained model pipeline (optional)
+### requirements.txt # Dependencies
+### README.md # Project documentation
+
+## Dataset Description
+### - Rows: ~7,043 customers
+### - Columns:
+ ### • Demographics: gender, SeniorCitizen, Partner, Dependents
+ ### • Services: PhoneService, InternetService, OnlineSecurity, etc.
+ ### • Account Info: Contract type, PaymentMethod, PaperlessBilling
+ ### • Financials: MonthlyCharges, TotalCharges
+ ### • Target: Churn (Yes/No)
+
+## Methodology
+### 1. Data Preprocessing
+ ### - Handled missing values (esp. TotalCharges)
+ ### - Converted categorical variables using OneHotEncoding
+ ### - Normalized numerical variables (MonthlyCharges, TotalCharges, tenure)
+ ### - Dealt with class imbalance using stratified splits
+
+### 2. Exploratory Data Analysis (EDA)
+ ### - Churn Rate: ~26.5% customers churned
+### - Key Findings:
+ ### • Month-to-month contracts → highest churn
+ ### • Fiber optic internet users churn more
+ ### • Senior citizens and high monthly charges = higher risk
+ ### • Longer tenure customers churn less
+
+### 3. Modeling
+  - Models Tested: Logistic Regression, Random Forest Classifier
  # - Evaluation Metric: ROC-AUC Score
  # - In the notebook: Logistic Regression performed best (ROC-AUC ≈ 0.84)
  # - In the Streamlit app: Both models are trained and compared; whichever achieves the best ROC-AUC is selected automatically.
