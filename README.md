@@ -2,7 +2,8 @@
 ## Project Overview
  - Goal: Predict whether a customer will churn (leave the service) based on demographic and
  service usage data.
- - Dataset: Telco Customer Churn Dataset (IBM Sample Data)- Approach:
+ - Dataset: Telco Customer Churn Dataset (IBM Sample Data)
+ - Approach:
  1. Exploratory Data Analysis (EDA)
  2. Data cleaning & preprocessing
  3. Model training & evaluation
